@@ -90,13 +90,12 @@ public class GoogleIabHelper extends IabHelper {
      */
     protected void startSetupInner() {
         mServiceConn = new ServiceConnection() {
-            @Override
+
             public void onServiceDisconnected(ComponentName name) {
                 SoomlaUtils.LogDebug(TAG, "Billing service disconnected.");
                 mService = null;
             }
 
-            @Override
             public void onServiceConnected(ComponentName name, IBinder service) {
                 SoomlaUtils.LogDebug(TAG, "Billing service connected.");
                 GoogleIabHelper.this.service = service;
@@ -157,7 +156,7 @@ public class GoogleIabHelper extends IabHelper {
     /**
      * Handles an activity result that's part of the purchase flow in in-app billing. If you
      * are calling {@link #launchPurchaseFlow}, then you must call this method from your
-     * Activity's {@link android.app.Activity@onActivityResult} method. This method
+     * Activity's {@link Activity@onActivityResult} method. This method
      * MUST be called from the UI thread of the Activity.
      *
      * @param requestCode The requestCode as you received it.

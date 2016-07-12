@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="android-store-google-play_main:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/android_store_google_play_jar</output-path>
+    <root id="archive" name="android-store-google-play.jar">
+      <element id="module-output" name="android-store-google-play_main" />
+    </root>
+  </artifact>
+</component>

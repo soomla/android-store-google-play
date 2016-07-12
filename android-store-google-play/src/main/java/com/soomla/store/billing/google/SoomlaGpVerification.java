@@ -34,7 +34,7 @@ import java.util.Map;
  */
 public class SoomlaGpVerification {
 
-    private static final String VERIFY_URL = "https://verify.soom.la/verify_android";
+    private static final String VERIFY_URL = "https://iap.vedidev.com/verify_android";
     private static final String GOOGLE_AUTH_URL = "https://accounts.google.com/o/oauth2/token";
     private static final String TAG = "SOOMLA SoomlaGpVerification";
 
@@ -131,8 +131,8 @@ public class SoomlaGpVerification {
                                 }
                             }
                         } else {
-                        SoomlaUtils.LogError(TAG, "An error occurred while trying to get receipt purchaseToken. " +
-                                "Stopping the purchasing process for: " + SoomlaGpVerification.this.purchase.getSku());
+                            SoomlaUtils.LogError(TAG, "An error occurred while trying to get receipt purchaseToken. " +
+                                    "Stopping the purchasing process for: " + SoomlaGpVerification.this.purchase.getSku());
                         }
                     } else {
                         SoomlaUtils.LogError(TAG, "Got null response");

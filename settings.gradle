@@ -1,0 +1,3 @@
+rootProject.name = 'soomla-android-store-google-play'
+include 'android-store-google-play'
+

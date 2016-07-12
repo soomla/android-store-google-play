@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/android-store-google-play/android-store-google-play.iml" filepath="$PROJECT_DIR$/.idea/modules/android-store-google-play/android-store-google-play.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/soomla-android-store-google-play.iml" filepath="$PROJECT_DIR$/.idea/modules/soomla-android-store-google-play.iml" />
+    </modules>
+  </component>
+</project>
