@@ -689,6 +689,7 @@ public class GoogleIabHelper extends IabHelper {
      * @throws JSONException
      */
     private int querySkuDetailsChunk(String itemType, IabInventory inv, ArrayList<String> chunkSkuList) throws RemoteException, JSONException {
+        try{
         Bundle querySkus = new Bundle();
         querySkus.putStringArrayList(GET_SKU_DETAILS_ITEM_LIST, chunkSkuList);
         Bundle skuDetails = mService.getSkuDetails(3, SoomlaApp.getAppContext().getPackageName(),
@@ -714,7 +715,10 @@ public class GoogleIabHelper extends IabHelper {
             SoomlaUtils.LogDebug(TAG, "Got sku details: " + d);
             inv.addSkuDetails(d);
         }
-
+     }
+     catch (Exception e){
+        return IabResult.IABHELPER_BAD_RESPONSE;        
+     }
         return IabResult.BILLING_RESPONSE_RESULT_OK;
     }
 
